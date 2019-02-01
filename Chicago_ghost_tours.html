@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
+<head>
+<title>What A Feet Chicago Tours</title>
+<script src="/assets/jquery.js"></script>
+<style>
+h1 {
+  font-family: "poor story";
+  text-align: center;
+  font-size: 120px;
+  color: blue;
+  margin: 30px 0 0 0;
+}
+body {
+  font-family: "Stylish";
+  margin: 0 auto;
+  max-width: 620px;
+  background: rgba(214,214,224,8);
+  font-size: 20px
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 10px 50px;
+}
+h2 {
+  text-align: center;
+  color: red;
+  margin: 0px 0 50px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,2), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,2), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://i.imgur.com/9PesHOz.jpg");
+}
+.second{
+  background-image: url("https://i.imgur.com/Otnvhzy.jpg");
+}
+.third{
+  background-image: url("https://i.imgur.com/ohs39p2.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>What A Feet</h1>
+<h2>Chicago Walking Tours</h2>
+<div class="first">
+  <p>Ghost Tour <span class="price">$25 per person</span><br />
+  <small>Stroll through some of the homes of Chicago's most notorious ghost sitings. Strap in for the thrill and scare of a lifetime. If you don't handle your boo's well, this one may not be the one for you - your living room may be your safest bet. </small></p>
+</div>
+
+<div class="second">
+  <p>Foodie Tour <span class="price">$75 per person</span><br />
+  <small>Chicago is ideal for foodies - it's not just home to great food but home to all sorts of food and every types of restaurant possible. These tours can be customized to fit your dietary needs. And yes, we'll have some deep-dish too. And if you want, we can even have some breakfast for dinner. </small></p>
+</div>
+  
+<div class="third">
+  <p>Art Tour <span class="price">$45 per person</span><br />
+  <small>Chicago is a cultural capital and home to some of the finest museums in the country. What's different about our tours is that we don't just wander around museums with you, but we also take you out to see the vibrant contemporary art scene - we'll visit an art studio and see some beautiful murals in Pilsen.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
